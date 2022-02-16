@@ -29,7 +29,7 @@ void motor_peripherals_init(MOTOR_INDEX motor)
 	if(motor == MOTOR1)
 	{
 		HAL_TIM_PWM_Start(&htim5,TIM_CHANNEL_1); //Enable PWM Channel 1 in Timer1
-		HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
+		HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL);
 		// MOTOR1 with ENCODER 3
 		// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
 	}else if(motor == MOTOR2)

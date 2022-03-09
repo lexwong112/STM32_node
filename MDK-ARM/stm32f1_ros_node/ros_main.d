@@ -65,6 +65,7 @@ stm32f1_ros_node\ros_main.o: ..\RosLibs\std_msgs/String.h
 stm32f1_ros_node\ros_main.o: ..\RosLibs\geometry_msgs/Twist.h
 stm32f1_ros_node\ros_main.o: ..\RosLibs\geometry_msgs/Vector3.h
 stm32f1_ros_node\ros_main.o: ../Core/Inc/motor_manage.h
+stm32f1_ros_node\ros_main.o: ../Core/Inc/stepping_motor.h
 stm32f1_ros_node\ros_main.o: ../Core/Inc/iksolver.h
 stm32f1_ros_node\ros_main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\utility
 stm32f1_ros_node\ros_main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h

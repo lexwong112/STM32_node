@@ -9,6 +9,7 @@
 #include <geometry_msgs/Vector3.h>
 
 #include "motor_manage.h"
+#include "stepping_motor.h"
 #include "iksolver.h"
 // Extern peripherals
 extern IWDG_HandleTypeDef hiwdg;
@@ -84,8 +85,7 @@ void setup(void)
 	// Enable all motor related peripherals (ALL CORE LEDs should be ON)
 	motor_peripherals_init(MOTOR1);
 	motor_peripherals_init(MOTOR2);
-	motor_peripherals_init(MOTOR3);
-	motor_peripherals_init(MOTOR4);
+	stepping_motor_peripherals_init();
 	// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
 }
 

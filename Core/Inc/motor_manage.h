@@ -13,7 +13,7 @@ extern TIM_HandleTypeDef htim8;
 
 /*** User defined variables ***/
 const int max_register_value = 3600;
-enum MOTOR_INDEX{MOTOR1,MOTOR2,MOTOR3,MOTOR4};
+enum MOTOR_INDEX{MOTOR1,MOTOR2};
 enum MOTOR_DIRECTION{CLOCKWISE,COUNTERCLOCKWISE,BREAK};
 
 /*** Function Prototypes ***/
@@ -38,14 +38,17 @@ void motor_peripherals_init(MOTOR_INDEX motor)
 		HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
 		// MOTOR2 with ENCODER 4 [Align with BAT IN in the motor drive]
 		// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
-	}else if (motor == MOTOR3)
+	}
+	
+	/*else if (motor == MOTOR3)
 	{
 		HAL_TIM_PWM_Start(&htim5,TIM_CHANNEL_3); //Enable PWM Channel 1 in Timer1
 		HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
 	}else{
 		HAL_TIM_PWM_Start(&htim5,TIM_CHANNEL_4); //Enable PWM Channel 1 in Timer1
 		HAL_TIM_Encoder_Start(&htim8, TIM_CHANNEL_ALL);
-	}
+	}*/
+	
 	x++;
 }
 
@@ -99,7 +102,9 @@ void motor_controller(MOTOR_INDEX motor,MOTOR_DIRECTION turn,int duty_cycle,int 
 		}
 			__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_2,duty_cycle);  
 			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
-	}else if (motor == MOTOR3)
+	}
+	
+	/*else if (motor == MOTOR3)
 	{
 		if(turn == CLOCKWISE)
 		{
@@ -146,7 +151,7 @@ void motor_controller(MOTOR_INDEX motor,MOTOR_DIRECTION turn,int duty_cycle,int 
 		
 			__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_4,duty_cycle);    
 			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
-	}
+	}*/
 	x++;
 }	
 

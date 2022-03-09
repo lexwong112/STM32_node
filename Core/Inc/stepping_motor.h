@@ -24,8 +24,8 @@ void stepping_motor_peripherals_init()
 
 void RCservo_init()
 {
-	//HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_1); //Enable PWM Channel 1 in Timer1
-	//HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_1); //Enable PWM Channel 1 in Timer1
+	HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_1); //Enable PWM Channel 1 in Timer1
+	HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_2); //Enable PWM Channel 1 in Timer1
 }
 
 void stepping_motor_controller(STEPPING_MOTOR_DIRECTION turn)
@@ -65,14 +65,28 @@ void RCServo_speed_byPWM(int PWM, int servo)
 
 	if (servo == 1)
 	{
-		//__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_1,PWM);  
+		__HAL_TIM_SET_COMPARE(&htim8,TIM_CHANNEL_1,PWM);  
 	} 
 	else 
 	{
-		//__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_1,PWM);  
+		__HAL_TIM_SET_COMPARE(&htim8,TIM_CHANNEL_2,PWM);  
 	}
 	
 }
+
+void RCServo_speed_STOP(int servo)
+{
+	if (servo == 1)
+	{
+		__HAL_TIM_SET_COMPARE(&htim8,TIM_CHANNEL_1,0);  
+	} 
+	else 
+	{
+		__HAL_TIM_SET_COMPARE(&htim8,TIM_CHANNEL_2,0);  
+	}
+	
+}
+
 
 
 void stepping_motor_speed_bySpeed(int motor_speed)

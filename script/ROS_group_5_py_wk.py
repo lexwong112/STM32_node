@@ -33,11 +33,11 @@ def update_speed(goal, state):
 
     # account for angle
     if angle_to_goal - theta > 0.05: 
-        speed.linear.x = 0.0
-        speed.angular.z = 0.3
-    elif angle_to_goal - theta < -0.1: 
-        speed.linear.x = 0.0
-        speed.angular.z = -0.3
+        speed.linear.x = 0.8
+        speed.angular.z = 0.3+(angle_to_goal - theta)
+    elif angle_to_goal - theta < -0.05: 
+        speed.linear.x = 0.8
+        speed.angular.z = -0.3+(angle_to_goal - theta)
     else:  #car moving forward
         if state != -1:
             speed.linear.x = 0.8

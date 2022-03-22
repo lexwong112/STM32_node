@@ -151,6 +151,16 @@ void loop(void)
 	//pid(); //encoder_value, create prev 
 	//pid();
 	// STM32 Virtual COM Port (VCP)
+	
+	
+	//encoder
+	encoder_value_m1 = (__HAL_TIM_GET_COUNTER(&htim1));
+	encoder_value_m2 = (__HAL_TIM_GET_COUNTER(&htim3));
+	encoders_data.x = encoder_value_m1;
+	encoders_data.y = encoder_value_m2;
+	
+	encoder_pub.publish(&encoders_data);
+	
 	unsigned char buffer[]= {"STM32 USB COM Port OK!\r\n"};
 	CDC_Transmit_FS(buffer,sizeof(buffer));
 

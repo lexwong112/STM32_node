@@ -95,6 +95,57 @@ void motor_controller(MOTOR_INDEX motor,MOTOR_DIRECTION turn,int duty_cycle,int 
 			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
 	}
 	
+<<<<<<< Updated upstream
+=======
+	/*else if (motor == MOTOR3)
+	{
+		if(turn == CLOCKWISE)
+		{
+			HAL_GPIO_WritePin(MOTOR3_IN1_GPIO_Port, MOTOR3_IN1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(MOTOR3_IN2_GPIO_Port, MOTOR3_IN2_Pin, GPIO_PIN_RESET);
+	
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+		}else if (turn == COUNTERCLOCKWISE)
+		{
+			HAL_GPIO_WritePin(MOTOR3_IN1_GPIO_Port, MOTOR3_IN1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(MOTOR3_IN2_GPIO_Port, MOTOR3_IN2_Pin, GPIO_PIN_SET);
+	
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+		}else
+		{
+			HAL_GPIO_WritePin(MOTOR3_IN1_GPIO_Port, MOTOR3_IN1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(MOTOR3_IN2_GPIO_Port, MOTOR3_IN2_Pin, GPIO_PIN_RESET);
+	
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+		}
+		
+			__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3,duty_cycle);    
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+	}else{
+		if(turn == CLOCKWISE)
+		{
+			HAL_GPIO_WritePin(MOTOR4_IN1_GPIO_Port, MOTOR4_IN1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(MOTOR4_IN2_GPIO_Port, MOTOR4_IN2_Pin, GPIO_PIN_RESET);
+	
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+		}else if (turn == COUNTERCLOCKWISE)
+		{.
+			HAL_GPIO_WritePin(MOTOR4_IN1_GPIO_Port, MOTOR4_IN1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(MOTOR4_IN2_GPIO_Port, MOTOR4_IN2_Pin, GPIO_PIN_SET);
+	
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+		}else
+		{
+			HAL_GPIO_WritePin(MOTOR4_IN1_GPIO_Port, MOTOR4_IN1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(MOTOR4_IN2_GPIO_Port, MOTOR4_IN2_Pin, GPIO_PIN_RESET);
+	
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+		}
+		
+			__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_4,duty_cycle);    
+			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
+	}*/
+>>>>>>> Stashed changes
 	x++;
 }	
 

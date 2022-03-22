@@ -725,7 +725,7 @@ F (..\RosLibs\duration.cpp)(0x618877F7)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O3
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\RosLibs\ros/duration.h)(0x618877FF)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-F (..\RosLibs\ros_main.cpp)(0x621EE614)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\RosLibs -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc --diag_suppress=1,47,1300-I.\RTE\_stm32f1_ros_node-IC:\Users\lexwo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\lexwo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE -D__USE_C99_MATH-o stm32f1_ros_node\ros_main.o --omf_browse stm32f1_ros_node\ros_main.crf --depend stm32f1_ros_node\ros_main.d)
+F (..\RosLibs\ros_main.cpp)(0x6230F203)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\RosLibs -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc --diag_suppress=1,47,1300-I.\RTE\_stm32f1_ros_node-IC:\Users\lexwo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\lexwo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE -D__USE_C99_MATH-o stm32f1_ros_node\ros_main.o --omf_browse stm32f1_ros_node\ros_main.crf --depend stm32f1_ros_node\ros_main.d)
 I (..\RosLibs\ros_main.h)(0x618877F7)
 I (../Core/Inc/main.h)(0x621EDD6A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x617129D9)
@@ -788,7 +788,7 @@ I (..\RosLibs\STM32Hardware.h)(0x618877F7)
 I (..\RosLibs\std_msgs/String.h)(0x61887800)
 I (..\RosLibs\geometry_msgs/Twist.h)(0x618877FC)
 I (..\RosLibs\geometry_msgs/Vector3.h)(0x618877FD)
-I (../Core/Inc/motor_manage.h)(0x621EE0F6)
+I (../Core/Inc/motor_manage.h)(0x6230EF22)
 I (../Core/Inc/stepping_motor.h)(0x62237E77)
 I (../Core/Inc/iksolver.h)(0x619AFEA4)
 I (C:\Keil_v5\ARM\ARMCC\include\utility)(0x60252378)
@@ -800,7 +800,7 @@ I (..\RosLibs\ros/time.h)(0x618877FF)
 I (..\RosLibs\ros/duration.h)(0x618877FF)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-F (..\Core\Inc\motor_manage.h)(0x621EE0F6)()
+F (..\Core\Inc\motor_manage.h)(0x6230EF22)()
 F (..\Core\Inc\iksolver.h)(0x619AFEA4)()
 F (..\Core\Inc\stepping_motor.h)(0x62237E77)()
 F (../USB_DEVICE/App/usb_device.c)(0x621EDD69)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\RosLibs -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc --diag_suppress=1,47,1300-I.\RTE\_stm32f1_ros_node-IC:\Users\lexwo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\lexwo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE -D__USE_C99_MATH-o stm32f1_ros_node\usb_device.o --omf_browse stm32f1_ros_node\usb_device.crf --depend stm32f1_ros_node\usb_device.d)

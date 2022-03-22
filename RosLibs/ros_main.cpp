@@ -85,7 +85,7 @@ void setup(void)
 	// Enable all motor related peripherals (ALL CORE LEDs should be ON)
 	motor_peripherals_init(MOTOR1);
 	motor_peripherals_init(MOTOR2);
-	stepping_motor_peripherals_init();
+	//stepping_motor_peripherals_init();
 	// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
 }
 
@@ -93,6 +93,7 @@ std::pair<double, double> error(0,0);
 std::pair<double, double> target(0,0);
 std::pair<double, double> integral(0,0);
 
+int status = 0;
 
 void pid(long encoder_value, MOTOR_INDEX MOTOR, double Kp, double Ki, double Kd)
 {
@@ -154,10 +155,19 @@ void loop(void)
 	
 	
 	//encoder
-	encoder_value_m1 = (__HAL_TIM_GET_COUNTER(&htim1));
-	encoder_value_m2 = (__HAL_TIM_GET_COUNTER(&htim3));
-	encoders_data.x = encoder_value_m1;
-	encoders_data.y = encoder_value_m2;
+	encoder_value_m1 = (uint32_t)(__HAL_TIM_GET_COUNTER(&htim1));
+	encoder_value_m2 = (uint32_t)(__HAL_TIM_GET_COUNTER(&htim3));
+	if(status == 0 && encoder_value_m1 == (uint32_t)0)
+	{
+		encoders_data.x = 0;
+	}
+	else
+	{
+		status=1;
+		encoders_data.x = 65535 - (float)encoder_value_m1;
+	}
+	//encoders_data.x = (float)encoder_value_m1;
+	encoders_data.y = (float)encoder_value_m2;
 	
 	encoder_pub.publish(&encoders_data);
 	

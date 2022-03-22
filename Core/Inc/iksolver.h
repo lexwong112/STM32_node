@@ -17,7 +17,7 @@ std::pair<int,int> twin_motors_rotations;
 
 // Wheel physical parameters in meters
 double wheel_seperation = 0.47;
-double max_velocity = 25;
+double max_velocity = 15;
 
 // Wheel speed in m/s and rad/s
 double motor1_v = 0, motor2_v = 0;

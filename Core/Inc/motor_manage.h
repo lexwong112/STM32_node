@@ -95,8 +95,6 @@ void motor_controller(MOTOR_INDEX motor,MOTOR_DIRECTION turn,int duty_cycle,int 
 			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
 	}
 	
-<<<<<<< Updated upstream
-=======
 	/*else if (motor == MOTOR3)
 	{
 		if(turn == CLOCKWISE)
@@ -145,7 +143,6 @@ void motor_controller(MOTOR_INDEX motor,MOTOR_DIRECTION turn,int duty_cycle,int 
 			__HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_4,duty_cycle);    
 			// FILL IT IN BY YOURSELF (╯ ͡❛ ‿ ͡❛)╯┻━┻
 	}*/
->>>>>>> Stashed changes
 	x++;
 }	
 

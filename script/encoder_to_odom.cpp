@@ -22,10 +22,10 @@ const int ros_update_hz = 1;                                   // in Hz
 // Robot physical parameters
 const double offset_distance_error = 3.580;                                                  // distance compensation
 const double offset_theta_error = 0.18;                                                      // theta compensation
-const double robot_wheel_seperation = 0.3;                                                   // in meter
-const double robot_wheel_radius = 0.01;                                                     // in meter
-const double encoder_per_rotation_m1 = 28911.0;                                              // encoder value per rotation of motor1 [from 65535 - 65305]
-const double encoder_per_rotation_m2 = 28911.0;                                              // encoder value per rotation of motor2 [from 0 - 28911]
+const double robot_wheel_seperation = 0.465;                                                   // in meter
+const double robot_wheel_radius = 0.0625;                                                     // in meter
+const double encoder_per_rotation_m1 = 65535;//28911.0;                                              // encoder value per rotation of motor1 [from 65535 - 65305]
+const double encoder_per_rotation_m2 = 65535;//28911.0;                                              // encoder value per rotation of motor2 [from 0 - 28911]
 double distance_per_count_m1 = (double)(2*PI*robot_wheel_radius)/encoder_per_rotation_m1;    // Distance for an encoder pulse in m
 double distance_per_count_m2 = (double)(2*PI*robot_wheel_radius)/encoder_per_rotation_m2 ;   // Distance for an encoder pulse in m
 
